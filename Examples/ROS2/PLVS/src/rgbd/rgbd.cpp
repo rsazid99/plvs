@@ -39,15 +39,18 @@ int main(int argc, char **argv)
     node->SetBaseline(baseline);    
     std::cout << "============================ " << std::endl;
 
-#if  1
-    rclcpp::executors::MultiThreadedExecutor executor(rclcpp::ExecutorOptions(), 4); // Use 4 threads
-    executor.add_node(node);  
-    executor.spin();          // block until shutdown
-    rclcpp::shutdown();
-#else
+    // #if  1
+    //     rclcpp::executors::MultiThreadedExecutor executor(rclcpp::ExecutorOptions(), 4); // Use 4 threads
+    //     executor.add_node(node);  
+    //     executor.spin();          // block until shutdown
+    //     rclcpp::shutdown();
+    // #else
+    //     rclcpp::spin(node);
+    //     rclcpp::shutdown();
+    // #endif 
     rclcpp::spin(node);
     rclcpp::shutdown();
-#endif 
+
 
     return 0;
 }
