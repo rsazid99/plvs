@@ -116,7 +116,7 @@ if [[ ! -d $TARGET_FOLDER/opencv ]]; then
         if [[ $version == *"24.04"* ]] ; then
             install_packages libcudnn-dev
         else 
-            install_packages libcudnn8 libcudnn8-dev  # check and install otherwise this is going to update to the latest version (and that's not we necessary want to do)
+            install_packages libcudnn9 libcudnn9-dev  # check and install otherwise this is going to update to the latest version (and that's not we necessary want to do)
         fi
     fi 
 
