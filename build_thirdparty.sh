@@ -109,7 +109,7 @@ if [ ! -d rerun ]; then
     git clone https://github.com/rerun-io/rerun.git rerun
     #git fetch --all --tags # to fetch tags 
     cd rerun
-    git checkout 0.14.1
+    git checkout 0.15.1
     cd .. 
 fi
 cd rerun
