@@ -232,7 +232,7 @@ if [ ! -f opencv/install/lib/libopencv_core.so ]; then
           -DWITH_CUBLAS=ON \
           -DWITH_CUFFT=ON \
           -DCUDA_FAST_MATH=ON \
-          -DCUDA_ARCH_BIN="6.2" \
+          -DCUDA_ARCH_BIN="6.2 8.7" \
           -DCUDA_ARCH_PTX="" \
           -DBUILD_opencv_cudacodec=OFF \
           -DENABLE_NEON=ON \
